@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873185709761",
+    "project_id": "kawiarnia-c0840",
+    "storage_bucket": "kawiarnia-c0840.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873185709761:android:c324d8b7ceb8a97b924e40",
+        "android_client_info": {
+          "package_name": "com.example.kawiarnia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPq8ORcAH2q4JUp425D52Ty5ghMdsjY04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
