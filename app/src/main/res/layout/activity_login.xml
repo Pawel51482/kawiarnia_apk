@@ -1,111 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:background="@drawable/zdj3"
+    android:layout_height="match_parent">
 
-    <!-- Formularz logowania -->
+    <!-- Przycisk Powrotu -->
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#D38334"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:text="Powrót"
+        android:textColor="#FFFFFF" />
+
+    <!-- Główna zawartość ekranu w LinearLayout -->
     <LinearLayout
         android:id="@+id/loginLayout"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
 
+        <!-- Formularz logowania -->
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/bialy2"
+            android:textColor="@color/bialy2"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColorHint="@color/bialy2" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Password"
+            android:backgroundTint="@color/bialy2"
+            android:textColor="@color/bialy2"
+            android:hint="Hasło"
             android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColorHint="@color/bialy2" />
 
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log in"
-            android:layout_marginTop="32dp" />
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/JasnyBraz"
+            android:text="Zaloguj" />
 
         <TextView
             android:id="@+id/goToRegisterText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Don't have an account?"
-            android:layout_marginTop="16dp"/>
+            android:text="Nie masz konta?"
+            android:textColor="@color/bialy2" />
 
         <Button
             android:id="@+id/goToRegisterButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_marginTop="8dp" />
-
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/JasnyBraz"
+            android:text="Zarejestruj się" />
     </LinearLayout>
 
-    <!-- Formularz rejestracji (domyślnie ukryty) -->
+    <!-- Formularz rejestracji -->
     <LinearLayout
         android:id="@+id/registerLayout"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
         android:visibility="gone">
+
 
         <EditText
             android:id="@+id/registerEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/bialy2"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:textColor="@color/bialy2"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/bialy2" />
 
         <EditText
             android:id="@+id/registerPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/bialy2"
+            android:textColor="@color/bialy2"
+            android:hint="Hasło"
             android:inputType="textPassword"
-            android:layout_marginTop="16dp" />
+            android:textColorHint="@color/bialy2" />
 
         <EditText
             android:id="@+id/confirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/bialy2"
+            android:textColor="@color/bialy2"
+            android:hint="Powtórz hasło"
             android:inputType="textPassword"
-            android:layout_marginTop="16dp" />
+            android:textColorHint="@color/bialy2" />
 
         <Button
             android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:layout_marginTop="32dp" />
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/JasnyBraz"
+            android:text="Zarejestruj" />
 
         <TextView
             android:id="@+id/goToLoginText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Already have an account?"
-            android:layout_marginTop="16dp"/>
+            android:text="Masz juz konto?"
+            android:textColor="@color/bialy2" />
 
         <Button
             android:id="@+id/goToLoginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log in"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/JasnyBraz"
+            android:text="Zaloguj" />
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

@@ -56,6 +56,17 @@ class LoginActivity : AppCompatActivity() {
         loginLayout = findViewById(R.id.loginLayout)
         registerLayout = findViewById(R.id.registerLayout)
 
+
+        val buttonBack = findViewById<Button>(R.id.button_back)
+        buttonBack.setOnClickListener {
+            // Tworzymy Intent, który uruchomi MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Kończymy LoginActivity
+        }
+
+
+
         // Akcja logowania
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString().trim()

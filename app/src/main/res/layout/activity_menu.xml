@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/zdj3"
+    android:layout_height="match_parent">
+
+    <!-- Przycisk Powrotu -->
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#D38334"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:text="Powrót"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/menutitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/menuLayout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Menu"
+        android:fontFamily="@font/sourgummy"
+        android:textSize="36dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>
+
+
+    <!-- Główna zawartość ekranu w LinearLayout -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:visibility="visible">
+
+
+
+        <TextView
+            android:id="@+id/coffeePriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cena kawy"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/getPriceLatteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/JasnyBraz"
+            android:fontFamily="@font/sourgummy"
+            android:text="Latte"
+            android:layout_below="@id/coffeePriceTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/getPriceEspressoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/JasnyBraz"
+            android:fontFamily="@font/sourgummy"
+            android:text="Espresso"
+            android:layout_below="@id/getPriceLatteButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/getPriceCappuccinoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/JasnyBraz"
+            android:fontFamily="@font/sourgummy"
+            android:text="Cappuccino"
+            android:layout_below="@id/getPriceEspressoButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/getPriceAmericanoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/JasnyBraz"
+            android:fontFamily="@font/sourgummy"
+            android:text="Americano"
+            android:layout_below="@id/getPriceCappuccinoButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

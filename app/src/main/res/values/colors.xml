@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="CiemnyBraz">#5B3010</color>
+    <color name="JasnyBraz">#D38334</color>
+    <color name="bialy2">#B3FFFFFF</color>
 </resources>

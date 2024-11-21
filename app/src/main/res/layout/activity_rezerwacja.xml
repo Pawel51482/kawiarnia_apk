@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zdj3">
+
+    <!-- Przycisk Powrotu -->
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#D38334"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:text="Powrót"
+        android:textColor="#FFFFFF" />
+
+    <!-- Tytuł Ekranu -->
+    <LinearLayout
+        android:id="@+id/rezerwacjaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rezerwacja"
+            android:textSize="36dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Formularz rezerwacji -->
+    <LinearLayout
+        android:id="@+id/rezerwacjaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/rezerwacjaTitle"
+        android:layout_marginTop="20dp">
+
+        <!-- Etykieta i DatePicker -->
+        <TextView
+            android:id="@+id/date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz datę"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarTextColor="#000000"/>
+
+        <!-- Etykieta i Spinner do godzin -->
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz godzinę"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/time_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Etykieta i Spinner do wyboru stolika -->
+        <TextView
+            android:id="@+id/table_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz numer stolika"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/table_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Przycisk Rezerwacji -->
+        <Button
+            android:id="@+id/reserve_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zarezerwuj"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#D38334"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Etykieta błędu -->
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

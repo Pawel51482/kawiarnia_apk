@@ -23,12 +23,13 @@
 
         <TextView
             android:id="@+id/title"
-            style="@style/TextAppearance.MaterialComponents.Headline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="50dp"
             android:gravity="center"
             android:padding="8dp"
             android:text="NEGRAR"
+            android:fontFamily="@font/sourgummy"
             android:textColor="@color/white" />
     </androidx.cardview.widget.CardView>
 
@@ -104,23 +105,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logowanie"
+        android:drawableLeft="@drawable/baseline_login_24"
         android:backgroundTint="#D38334"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp" />
-
-    <TextView
-        android:id="@+id/userEmailTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zalogowano jako: "
-        android:textSize="18sp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
 
 
     <!-- Przycisk wylogowania -->
@@ -128,10 +118,12 @@
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/JasnyBraz"
+        android:drawableLeft="@drawable/baseline_logout_24"
         android:text="Wyloguj"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/button_login"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
